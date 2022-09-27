@@ -9,12 +9,14 @@ let numData = Array(15)
   })
   .sort(() => Math.random() - 0.5);
 
+alert("This is a Cross Number Game in which you have tap numbers from 1 to 15 and at the end you will get a suprise. Enjoy!!")
+
+
 numData.forEach((e, i) => {
   const pad = document.createElement("button");
   pad.innerHTML = e.value;
   pad.classList.add("pad");
   pad.addEventListener("click", () => {
-    console.log(currentNum);
     if (currentNum === e.value) {
       if (currentNum === 15) {
         setTimeout(() => {
@@ -24,7 +26,6 @@ numData.forEach((e, i) => {
       pad.classList.add("green");
       currentNum++;
     } else {
-      console.log(currentNum, e.value);
       pad.classList.add("red");
       setTimeout(() => {
         pad.classList.remove("red");
