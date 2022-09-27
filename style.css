@@ -28,7 +28,7 @@ body {
     font-size: 25px;
     border: 0;
     border-radius: 5px;
-    background-color: #ccc;
+    background-color: #f1f1f1;
     transition: all 0.25s;
 }
 .pad.red {
